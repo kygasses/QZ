@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登陆</title>
+<script language="javascript" type="text/javascript">
+ var urlhash = window.location.hash;
+if (!urlhash.match("fromapp"))
+{
+if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)))
+{
+window.location="Mp/login.html"; //这里的网址请改为你手机站的网址
+}
+}  
+    
+function login()
+{
+if(loginName.value=="admin"&&loginPawd.value=="123")
+{
+alert("登陆成功");
+window.open("shouye.html");/*百度，用内置函数或对象打开页面*/
+}
+else
+{
+alert("登陆失败，请你重新登陆");
+
+}
+}
+
+function xiaochu()
+{
+	loginName.value="";
+	loginPawd.value="";
+	
+	}
+</script>
+</head>
+<body>
+<marquee>登录名：admin 密码：123</marquee> 
+<div align="center">
+  <table background="img/del.jpg" width="1400" height="799" >
+    <tr>
+      <td width="256" height="261">&nbsp;</td>
+      <td width="800">&nbsp;</td>
+      <td width="8">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><table width="800" >
+        <tr>
+          <td width="339">&nbsp;</td>
+          <td width="104">用户名：</td>
+          <td width="341"><input name="loginName" type="text" id="loginName" width="60px"></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>密码：</td>
+          <td><input width="60px" name="loginPawd" type="password" id="loginPawd">&nbsp;</td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;
+            <table width="180">
+              <tr>
+                <td width="70"><input type="button" id="btnOk" name="btnOk" value="确定" onclick="login()" /></td>
+                <td width="98"><input type="button" id="btnCancel" name="btnCancel" value="取消" onclick="xiaochu()" /></td>
+              </tr>
+            </table></td>
+          </tr>
+      </table></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td height="162">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  
+</div>
+
+</body>
+</html>
