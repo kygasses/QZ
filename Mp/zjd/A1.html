@@ -146,9 +146,9 @@ catch(e)
  catch(e)  
  {  
   try //Google Chrome  
-  {  
+  {  var url="127.0.0.1/new.xml"
    var xmlhttp = new window.XMLHttpRequest();  
-   xmlhttp.open("GET","127.0.0.1/new.xml",false);  
+   xmlhttp.open("GET",url,false);  
    xmlhttp.send(null);  
    xmlDoc = xmlhttp.responseXML.documentElement;  
   }  
