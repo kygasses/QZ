@@ -148,7 +148,7 @@ catch(e)
   try //Google Chrome  
   {  
    var xmlhttp = new window.XMLHttpRequest();  
-   xmlhttp.open("GET","127.0.0.1"+fileName,false);  
+   xmlhttp.open("GET","127.0.0.1"+fileName,true);  
    xmlhttp.send(null);  
    xmlDoc = xmlhttp.responseXML.documentElement;  
   }  
