@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+ <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  
+  
+  <body>
+        <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">旅游网</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+        <li><a href="luxian.html">旅游路线</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">旅游景点 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="bazhaigou.html">八寨沟</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a  href="sanniangwan.html">三娘湾</a></li>
+             <li role="separator" class="divider"></li>
+            <li><a href="wanghailing.html">望海岭</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="shiwandasan.html">十万大山</a></li>
+            
+          </ul>
+        </li>
+         <li><a  href="http://qinzhou.tianqi.com/" target="_blank">天气预报</a></li>
+          <li><a href="http://www.meet99.com/map-qinzhou.html/" target="_blank">卫星地图</a></li>
+           <li><a href="http://qinzhou.cncn.com/jingdian/" target="_blank">交通路线</a></li>
+            
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+        </nav>
+      
+      
+      
+ <div class="container text-center">
+     <div class='t_head'> 
+        Welcome to QinZhou !
+     </div>
+        <div class='t_box_head text-left'> 
+           旅游景点
+         </div>
+     <div class='t_box text-center'>  
+         <a href="bazhaigou.html"><div class="col-xs-12 text-center"><div class=" t_item rotate_1"><img src="../img/bjg1.jpg"/><p>八寨沟</p></div></div></a>
+         <a href="sanniangwan.html"><div class="col-xs-12"><div class=" t_item  rotate_3 rotate_4 mg"><img src="../img/3.jpg"/><p>三娘湾</p></div></div></a>
+         <a  href="wanghailing.html"><div class="col-xs-12"> <div class=" t_item rotate_left  "><img style=" margin: 0 auto" src="../img/whl.jpg"/><p>望海岭</p></div></div></a>
+         <a href="shiwandasan.html"><div class="col-xs-12"> <div class="t_item t_item rotate_right  rotate_2 "><img src="../img/swds1.jpg"/><p>十万大山</p></div></div></a>
+     </div> 
+     
+     
+     
+      
+     <div class='t_box2'>  
+            <a  href="luxian.html" ><div class="col-xs-12">旅游路线</div></a>
+              <a  href="http://qinzhou.cncn.com/jingdian/" target="_blank"> <div class='col-xs-6'>交通路线</div></a>
+              <a  href="http://qinzhou.tianqi.com/" target="_blank">   <div class='col-xs-6'>天气预报</div></a>
+               <a  href="http://www.meet99.com/map-qinzhou.html/" target="_blank">  <div class='col-xs-6'>卫星地图</div></a>
+                <a  href="http://www.mksw.me/" target="_blank"> <div class='col-xs-6'>友情链接</div></a>
+            
+        </div>
+     
+          
+ </div>    
+      
+      
+      
+      <style>
+          body{ background-color:  #cccccc;}
+          .t_head{font-size:20px; margin:5px 0;}
+          .t_box_head{font-size:20px; margin:15px 0;}
+          .t_item{/*height:180px;*/ padding:5px 5px 5px 5px;background-color: white; margin: 0 auto; max-width: 250px;box-shadow:2px 2px 3px #aaaaaa;}
+          .t_item img{height:100%; width:100%; }
+          .t_item p{/*position:absolute; bottom:0;*/ }
+         .t_box2{margin-bottom: 20px}
+          .t_box2 .col-xs-6{border:1px solid #cccccc; height: 50px; text-align: center;background-color:#ccccff; color:  white; line-height: 50px; font-size:20px;}
+          .t_box2 .col-xs-12{background-color:#ccccff; height: 60px; color:white; line-height: 60px; margin-top: 50px;font-size:20px;}
+          
+          
+          .rotate_1
+{
+//float:left;
+-ms-transform:rotate(-8deg); /* IE 9 */
+-moz-transform:rotate(-8deg); /* Firefox */
+-webkit-transform:rotate(-8deg); /* Safari and Chrome */
+-o-transform:rotate(-8deg); /* Opera */
+transform:rotate(-8deg);
+}
+.rotate_2
+{
+//float:left;
+-ms-transform:rotate(16deg); /* IE 9 */
+-moz-transform:rotate(16deg); /* Firefox */
+-webkit-transform:rotate(16deg); /* Safari and Chrome */
+-o-transform:rotate(16deg); /* Opera */
+transform:rotate(16deg);
+}
+
+.rotate_3
+{
+//float:left;
+-ms-transform:translate(12px,15px); /* IE 9 */
+-moz-transform:translate(12px,15px);; /* Firefox */
+-webkit-transform:translate(12px,15px);; /* Safari and Chrome */
+-o-transform:translate(12px,15px);; /* Opera */
+transform:translate(12px,15px);;
+}
+
+.rotate_4
+{
+//float:left;
+-ms-transform:rotate(7deg); /* IE 9 */
+-moz-transform:rotate(7deg); /* Firefox */
+-webkit-transform:rotate(7deg); /* Safari and Chrome */
+-o-transform:rotate(7deg); /* Opera */
+transform:rotate(7deg);
+}
+
+.mg{ margin-bottom: 20px}
+       </style>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
