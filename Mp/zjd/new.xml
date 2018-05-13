@@ -2,6 +2,13 @@
 <!-- was: <?xml version="1.0" encoding="gb2312"?> -->
 <bookstore>
 <book id="BK1">    
+ <new id="A0">
+<title>t1</title>
+<img>
+ t2
+</img>
+<txt>t3</txt>
+</new>
 <new id="A1">
 <title>龙珠湖</title>
 <img>
