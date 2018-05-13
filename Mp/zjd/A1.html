@@ -150,11 +150,11 @@ catch(e)
    var xmlhttp = new window.XMLHttpRequest();  
    xmlhttp.open("GET","https://raw.githubusercontent.com/kygasses/QZ/master/Mp/zjd/new.xml",false);  
    xmlhttp.send(null);  
-   xmlDoc = xmlhttp.responseXML.documentElement;  
+   //xmlDoc = xmlhttp.responseXML.documentElement;  
   }  
   catch(e)  
   {  
-   alert(e.message);  
+   alert(e.message+"请求失败");  
   }  
  }
 
