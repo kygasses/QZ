@@ -150,7 +150,7 @@ catch(e)
    var xmlhttp = new window.XMLHttpRequest();  
    xmlhttp.open("GET","127.0.0.1/new.xml",false);  
    xmlhttp.send(null);  
-   xmlDoc = xmlhttp.responseXML;  
+   xmlDoc = xmlhttp.responseXML.documentElement;  
   }  
   catch(e)  
   {  
