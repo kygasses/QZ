@@ -255,7 +255,7 @@ for(var i=0; i<book.length;i++){
           
           
         try{
-        if(i+1>book.length||book[i+1].parentNode.getAttribute("id")!==book[i].parentNode.getAttribute("id")){next_title="无";next=null}
+        if(i+1>=book.length||book[i+1].parentNode.getAttribute("id")!==book[i].parentNode.getAttribute("id")){next_title="无";next=null}
           else{ next=book[i+1].getAttribute("id"); next_title=book[i+1].childNodes[0].childNodes[0].nodeValue;} 
          
           
